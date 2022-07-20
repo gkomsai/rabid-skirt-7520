@@ -1,10 +1,8 @@
 import {
   Box,
-  Button,
   Flex,
   HStack,
   Icon,
-  IconButton,
   Image,
   Input,
   InputGroup,
@@ -14,10 +12,21 @@ import {
 import React from "react";
 import { BsBag } from "react-icons/bs";
 import { FaRegUser } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { links } from "../links/links";
+
+let activeStyle = {
+  color: "red",
+};
+
+let baseStyle = {
+  textDecoration: "none",
+  color: "black",
+};
 
 const Navbar = () => {
   const navigate = useNavigate();
+
   return (
     <>
       <Flex
@@ -25,7 +34,7 @@ const Navbar = () => {
         px={"6rem"}
         justifyContent={"space-between"}
         bg="#FEE8E8"
-        border={"1px solid red"}
+       
       >
         <HStack spacing="4">
           <Image src="https://www.myglamm.com/images/gift.svg"></Image>
@@ -41,11 +50,12 @@ const Navbar = () => {
       </Flex>
 
       {/* ............................. Middle nav..................................... */}
+      
       <Flex
         padding={".5rem"}
         px={"6rem"}
         justifyContent={"space-between"}
-        border={"1px solid red"}
+       
       >
         <HStack spacing="10rem">
           <Image
@@ -74,9 +84,20 @@ const Navbar = () => {
         </HStack>
       </Flex>
 
-{/* ------------------------Category Navbar--------------------------------- */}
-
-
+      {/* ------------------------Category Navbar--------------------------------- */}
+     
+      <HStack px={"8rem"} spacing={10}>
+        {links.map((el) => (
+          <Box key={el.title}>
+            <NavLink
+              to={el.to}
+              style={({ isActive }) => (isActive ? activeStyle : baseStyle)}
+            >
+              {el.title}
+            </NavLink>
+          </Box>
+        ))}
+      </HStack>
     </>
   );
 };
