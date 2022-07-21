@@ -1,15 +1,11 @@
-import { Box, Image, VStack } from "@chakra-ui/react";
-import React from "react";
-import Carousel from "../components/Carousel";
+import React from 'react'
 
 const Home = () => {
   return (
-    <Box>
-      <Box>
-        <Carousel />
-      </Box>
-    </Box>
-  );
-};
+    <div>
+    <h1>Welcome to the home page!</h1>
+    </div>
+  )
+}
 
-export default Home;
+export default Home
