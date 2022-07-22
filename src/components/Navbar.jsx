@@ -34,28 +34,32 @@ const Navbar = () => {
         px={"6rem"}
         justifyContent={"space-between"}
         bg="#FEE8E8"
-       
+        w={"100vw"}  m="auto"
       >
-        <HStack spacing="4">
-          <Image src="https://www.myglamm.com/images/gift.svg"></Image>
+      <Box  minW={"40vw"} spacing="4" >
+        <HStack >
+          <Image  src="https://www.myglamm.com/images/gift.svg"></Image>
           <Text cursor="pointer">Flat 199 store</Text>
           <Text cursor={"pointer"} color="orange">
             Shop Now
           </Text>
         </HStack>
-        <HStack spacing={4}>
+        </Box>
+        <Box>
+        <HStack   spacing={4}>
           <Image src="https://www.myglamm.com/images/shop.svg"></Image>
           <Text cursor={"pointer"}>MyGlamm store</Text>
         </HStack>
+        </Box>
       </Flex>
 
       {/* ............................. Middle nav..................................... */}
-      
+
       <Flex
         padding={".5rem"}
         px={"6rem"}
         justifyContent={"space-between"}
-       
+        minW={"100vw"} 
       >
         <HStack spacing="10rem">
           <Image
@@ -78,15 +82,15 @@ const Navbar = () => {
           </InputGroup>
         </HStack>
 
-        <HStack spacing={8}>
-          <Icon as={BsBag} w={6} h={6} cursor="pointer" />
-          <Icon as={FaRegUser} w={6} h={6} cursor="pointer" />
+        <HStack spacing={"2rem"}>
+          <Icon as={BsBag} w={"2.4rem"} h={"2.4rem"} cursor="pointer" />
+          <Icon as={FaRegUser} w={"2.4rem"} h={"2.4rem"} cursor="pointer" />
         </HStack>
       </Flex>
 
       {/* ------------------------Category Navbar--------------------------------- */}
      
-      <HStack px={"8rem"} spacing={10}>
+      <HStack px={"8rem"}   w={"100vw"}  m="auto" spacing={"4rem"}>
         {links.map((el) => (
           <Box key={el.title}>
             <NavLink
