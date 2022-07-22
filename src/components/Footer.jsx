@@ -62,25 +62,19 @@ export default function Footer() {
     <VStack
       bg={useColorModeValue("gray.50", "gray.900")}
       color={useColorModeValue("gray.700", "gray.200")}
-      spacing={10}
+      spacing={"2rem"}
       mb="4rem"
     >
-      <Container as={Stack} minW={"80vw"}>
-        <SimpleGrid columns={{ base: 1, sm: 2, md: 9 }} spacing={4}>
+      <Container as={Stack} maxW={"6xl"}>
+        <SimpleGrid
+          columns={{ base: 4, sm: 6, md: 8 }}
+        
+          spacing={"0.5rem"}
+        >
           <Stack align={"flex-start"}>
             <ListHeader>LIPS</ListHeader>
             <Link href={"#"}>Liqid Lipstick</Link>
-            <Stack direction={"row"} align={"center"} spacing={2}>
-              <Link href={"#"}>Lip Gloss</Link>
-              <Tag
-                size={"sm"}
-                bg={useColorModeValue("green.300", "green.800")}
-                ml={2}
-                color={"white"}
-              >
-                New
-              </Tag>
-            </Stack>
+            <Link href={"#"}>Lip Gloss</Link>
             <Link href={"#"}>Lip Liner</Link>
             <Link href={"#"}>Lip Balm</Link>
             <Link href={"#"}>Glutter</Link>
@@ -91,73 +85,77 @@ export default function Footer() {
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Face</ListHeader>
-            <Link href={"#"}> Us</Link>
-            <Link href={"#"}>Press</Link>
-            <Link href={"#"}>Careers</Link>
+            <Link href={"#"}> Face set</Link>
+            <Link href={"#"}>Fixing Power</Link>
+            <Link href={"#"}>Primer</Link>
+            <Link href={"#"}>Highlighter</Link>
+            <Link href={"#"}>Banana Powder</Link>
+            <Link href={"#"}>Make Up</Link>
+            <Link href={"#"}>Bronzer</Link>
+            <Link href={"#"}>MakeUp Brush</Link>
+          </Stack>
+          <Stack align={"flex-start"}>
+            <ListHeader>EYES</ListHeader>
+            <Link href={"#"}>Shadow</Link>
+            <Link href={"#"}>Eyeliner</Link>
+            <Link href={"#"}>Eyebrows</Link>
+            <Link href={"#"}>Glitter</Link>
+            <Link href={"#"}>Mascara</Link>
+            <Link href={"#"}>Kajal</Link>
+            <Link href={"#"}>Eye Powder</Link>
+            <Link href={"#"}>Eye brushes</Link>
+          </Stack>
+          <Stack align={"flex-start"}>
+            <ListHeader>NAILS </ListHeader>
+            <Link href={"#"}>Nail Polish</Link>
+            <Link href={"#"}>Twitter</Link>
+            <Link href={"#"}>Dribbble</Link>
+            <Link href={"#"}>Instagram</Link>
+            <Link href={"#"}>LinkedIn</Link>
+          </Stack>
+          <Stack align={"flex-start"}>
+            <ListHeader>Bath & Body</ListHeader>
+            <Link href={"#"}>Night cream</Link>
+            <Link href={"#"}>Eye cream</Link>
+            <Link href={"#"}>Body lotion</Link>
+            <Link href={"#"}>Massage cream</Link>
+            <Link href={"#"}>Hand wash</Link>
+            <Link href={"#"}>Foot cream</Link>
+          </Stack>
+          <Stack align={"flex-start"}>
+            <ListHeader>Skin</ListHeader>
+            <Link href={"#"}>Facebook</Link>
+            <Link href={"#"}>Twitter</Link>
+            <Link href={"#"}>Dribbble</Link>
+            <Link href={"#"}>Instagram</Link>
+            <Link href={"#"}>LinkedIn</Link>
+          </Stack>
+          <Stack align={"flex-start"}>
+            <ListHeader>HAIRS</ListHeader>
+            <Link href={"#"}>Shampoo</Link>
+            <Link href={"#"}>Hair Gel</Link>
+            <Link href={"#"}>Conditioner</Link>
+            <Link href={"#"}>Sereum</Link>
+            <Link href={"#"}>Hair oil</Link>
+          </Stack>
+          <Stack align={"flex-start"}>
+            <ListHeader>Know More</ListHeader>
+            <Link href={"#"}>About Us</Link>
+            <Link href={"#"}> Offers</Link>
+            <Link href={"#"}>Refer & Earn</Link>
             <Link href={"#"}>Contact Us</Link>
             <Link href={"#"}>Partners</Link>
-          </Stack>
-          <Stack align={"flex-start"}>
-            <ListHeader>Legal</ListHeader>
-            <Link href={"#"}>Cookies Policy</Link>
             <Link href={"#"}>Privacy Policy</Link>
-            <Link href={"#"}>Terms of Service</Link>
-            <Link href={"#"}>Law Enforcement</Link>
-            <Link href={"#"}>Status</Link>
+            <Link href={"#"}>Site Map</Link>
+            <Link href={"#"}>Store Locator</Link>
+            <Link href={"#"}>Replacement</Link>
+            <Link href={"#"}>Press</Link>
+            <Link href={"#"}>Partners</Link>
           </Stack>
-          <Stack align={"flex-start"}>
-            <ListHeader>Follow Us</ListHeader>
-            <Link href={"#"}>Facebook</Link>
-            <Link href={"#"}>Twitter</Link>
-            <Link href={"#"}>Dribbble</Link>
-            <Link href={"#"}>Instagram</Link>
-            <Link href={"#"}>LinkedIn</Link>
-          </Stack>
-          <Stack align={"flex-start"}>
-            <ListHeader>Follow Us</ListHeader>
-            <Link href={"#"}>Facebook</Link>
-            <Link href={"#"}>Twitter</Link>
-            <Link href={"#"}>Dribbble</Link>
-            <Link href={"#"}>Instagram</Link>
-            <Link href={"#"}>LinkedIn</Link>
-          </Stack>
-          <Stack align={"flex-start"}>
-            <ListHeader>Follow Us</ListHeader>
-            <Link href={"#"}>Facebook</Link>
-            <Link href={"#"}>Twitter</Link>
-            <Link href={"#"}>Dribbble</Link>
-            <Link href={"#"}>Instagram</Link>
-            <Link href={"#"}>LinkedIn</Link>
-          </Stack>
-          <Stack align={"flex-start"}>
-            <ListHeader>Follow Us</ListHeader>
-            <Link href={"#"}>Facebook</Link>
-            <Link href={"#"}>Twitter</Link>
-            <Link href={"#"}>Dribbble</Link>
-            <Link href={"#"}>Instagram</Link>
-            <Link href={"#"}>LinkedIn</Link>
-          </Stack>
-          <Stack align={"flex-start"}>
-            <ListHeader>Follow Us</ListHeader>
-            <Link href={"#"}>Facebook</Link>
-            <Link href={"#"}>Twitter</Link>
-            <Link href={"#"}>Dribbble</Link>
-            <Link href={"#"}>Instagram</Link>
-            <Link href={"#"}>LinkedIn</Link>
-          </Stack>
-          <Stack align={"flex-start"}>
-            <ListHeader>Follow Us</ListHeader>
-            <Link href={"#"}>Facebook</Link>
-            <Link href={"#"}>Twitter</Link>
-            <Link href={"#"}>Dribbble</Link>
-            <Link href={"#"}>Instagram</Link>
-            <Link href={"#"}>LinkedIn</Link>
-          </Stack>
-         
         </SimpleGrid>
       </Container>
 
-      <Container as={Stack} minW={"80vw"} margin="auto">
+      <Container as={Stack} maxW={"6xl"}>
         <Flex justifyContent={"space-between"} alignItems="center">
           <Box>
             <Newsletter />
@@ -184,14 +182,14 @@ export default function Footer() {
             <Flex justifyContent={"space-between"}>
               <Box>
                 <Image
-                w="10rem"
+                  w="10rem"
                   src="https://www.myglamm.com/images/iosStore.png"
                   alt=""
                 />
               </Box>
               <Box>
                 <Image
-                w="10rem"
+                  w="10rem"
                   src="https://www.myglamm.com/images/playStore.png"
                   alt=""
                 />

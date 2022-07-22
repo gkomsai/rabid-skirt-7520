@@ -1,17 +1,20 @@
 .App {
   text-align: center;
+  width: 100%;
+  
 }
 
-/* .subh{
-  margin: auto auto 2.5rem;
-  font-weight: 600;
-  width: max-content;
-  text-transform: uppercase;
-  padding: 0px 5px;
-  background: linear-gradient(180deg,transparent 60%,var(--color1) 30px);
-  font-size: 24px;color: blue;
-} */
+.nav{
 
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+ 
+  
+  background-color: blue;
+  
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

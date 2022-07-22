@@ -11,7 +11,7 @@ const Home = () => {
       <Box>
         <Carousel />
       </Box>
-      <Box w={"80vw"}  m="auto">
+      <Box w={"80vw"}  m="auto" position={"relative"}>
         <VStack spacing="1rem">
           {" "}
           <Box mt="-10rem">
