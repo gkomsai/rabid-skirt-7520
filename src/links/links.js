@@ -1,41 +1,80 @@
 export const links = [
-    {
-        to: "/",
-        title: "HOME",
-    },
-    {
-        to: "/makeup",
-        title: "MAKEUP",
-    },
-    {
-        to: "/haircare",
-        title: "HAIRCARE",
-    },
-    {
-        to: "/skincare",
-        title: "SKINCARE",
-    },
-    {
-        to: "/sanetising-care",
-        title: "SANITIZING CARE",
-    },
-    {
-        to: "/collectios",
-        title: "COLLECTION",
-    },
-    {
-        to: "/rewards",
-        title: "REWARDS",
-    },
-    {
-        to: "/myglamm-studio",
-        title: "MyGlammStudio",
-    },
-    {
-        to: "/offers",
-        title: "OFFERS",
-    },
-    
-
-
+  {
+    to: "/",
+    title: "HOME",
+  },
+  {
+    to: "/makeup",
+    title: "MAKEUP",
+  },
+  {
+    to: "/haircare",
+    title: "HAIRCARE",
+  },
+  {
+    to: "/skincare",
+    title: "SKINCARE",
+  },
+  {
+    to: "/sanetising-care",
+    title: "SANITIZING CARE",
+  },
+  {
+    to: "/collectios",
+    title: "COLLECTION",
+  },
+  {
+    to: "/rewards",
+    title: "REWARDS",
+  },
+  {
+    to: "/myglamm-studio",
+    title: "MyGlammStudio",
+  },
+  {
+    to: "/offers",
+    title: "OFFERS",
+  },
+];
+export const subCat = [
+  {
+    to: "/skincare",
+    img: "images/Skin.png",
+    title: "Skin",
+  },
+  {
+    to: "/makeup",
+    img: "images/Lips.png",
+    title: "Lips",
+  },
+  {
+    to: "/haircare",
+    img: "images/hair.jpg",
+    title: "Hair",
+  },
+  {
+    to: "/skincare",
+    img: "images/Eyes.png",
+    title: "Eyes",
+  },
+  {
+    to: "/skincare",
+    img: "images/Face.png",
+    title: "Face",
+  },
+  {
+    to: "/skincare",
+    img: "images/Nails.png",
+    title: "Nails",
+  },
+  {
+    to: "/sanetising-care",
+    img: "images/SC.png",
+    title: "SANITIZING CARE",
+  },
+  {
+    to: "/skincare",
+    img: "images/Bath.png",
+    title: "Bath & Body",
+  },
 ];
