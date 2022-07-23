@@ -5,7 +5,8 @@ import Carousel from "../components/Carousel";
 
 import { subCat } from "../links/links";
 import bgVideo from "../video/bgVideo.mp4";
-import play from "../assets/play.png"
+import play from "../asset/play.png"
+import MultiItemCarousel from "../components/MultiItemCrousel";
 
 const Home = () => {
   return (
@@ -53,7 +54,6 @@ const Home = () => {
         <video width="100%" autoPlay loop muted>
           <source src={bgVideo} type="video/mp4" />
         </video>
-
         <Flex className="content"  >
         <Heading mb="2rem" > BRAND STORY</Heading>
         <Text>
@@ -69,7 +69,9 @@ const Home = () => {
 
       </Box>
 
-
+<Box>
+<MultiItemCarousel /> 
+</Box>
 
     </Box>
   );
