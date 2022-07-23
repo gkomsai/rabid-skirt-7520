@@ -30,7 +30,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <Box >
+    <Box className="nav" >
       <Flex
         padding={"1rem"}
         pr={"3rem"}
@@ -117,7 +117,7 @@ const Navbar = () => {
 
       <HStack pr={"3rem"} pl={"3rem"} spacing={"4rem"}>
         {links.map((el) => (
-          <Box fontSize={"1rem"} key={el.title}>
+          <Box _hover={{borderBottom: "3px solid #FF9D9D"}} fontSize={"1rem"} key={el.title}>
             <NavLink
               to={el.to}
               style={({ isActive }) => (isActive ? activeStyle : baseStyle)}

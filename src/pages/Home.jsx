@@ -1,17 +1,19 @@
-import { Box, HStack, Image, Text, VStack } from "@chakra-ui/react";
+import { Box, Flex, Heading, HStack, Image, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import Carousel from "../components/Carousel";
 
 import { subCat } from "../links/links";
+import bgVideo from "../video/bgVideo.mp4";
+import play from "../assets/play.png"
 
 const Home = () => {
   return (
     <Box>
-      <Box>
+      <Box mb="1rem">
         <Carousel />
       </Box>
-      <Box w={"80vw"}  m="auto" position={"relative"}>
+      <Box w={"80vw"} m="auto" >
         <VStack spacing="1rem">
           {" "}
           <Box mt="-10rem">
@@ -42,11 +44,33 @@ const Home = () => {
                   <Text fontWeight="bold"> {el.title}</Text>
                 </Box>
               ))}
-           
             </HStack>
           </Box>
         </VStack>
       </Box>
+
+      <Box className="video" pos={"relative"}  >
+        <video width="100%" autoPlay loop muted>
+          <source src={bgVideo} type="video/mp4" />
+        </video>
+
+        <Flex className="content"  >
+        <Heading mb="2rem" > BRAND STORY</Heading>
+        <Text>
+          Backed by one of Europe's largest natural beauty companies, MyGlamm
+          collaborated with global experts and makeup artists to bring about
+          exciting innovation in makeup to accomplish our single, focused goal
+          make looking glamorous effortless! Know More
+        </Text>
+        <Box mt="1rem" >
+          <Image cursor={"pointer"}  src={play} alt="" />  
+        </Box>
+      </Flex>
+
+      </Box>
+
+
+
     </Box>
   );
 };

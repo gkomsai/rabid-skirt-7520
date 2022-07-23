@@ -8,7 +8,7 @@ import AllRoutes from './routes/AllRoutes';
 
 function App() {
   return (
-    <div className="App"  >
+    <div >
     <Navbar/>
     <AllRoutes />
     <Footer />

@@ -1,19 +1,31 @@
-.App {
+/* .App {
   text-align: center;
   width: 100%;
-  
-}
-
-.nav{
-
-
+  /* position: absolute; */
+/* top: 0; */
+/* } */
+*/ .nav {
   position: fixed;
   top: 0px;
   left: 0px;
- 
-  
   background-color: blue;
+  width: 100%;
+  z-index: 2;
+}
+
+.content {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 9rem;
+  margin-left: 18rem;
   
+
+  color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -21,7 +33,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 
 @keyframes App-logo-spin {
   from {
