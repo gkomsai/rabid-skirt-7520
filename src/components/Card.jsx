@@ -1,8 +1,12 @@
 import { Box, Flex, Heading, Image, position, Text } from "@chakra-ui/react";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
-
+let arr=[];
+function myFunction(item){
+    arr.push(item);
+    localStorage.setItem("singleProduct", JSON.stringify(arr));
+    
+}
 
 const Card = ({ item }) => {
   let { name, brand, price, image_link } = item;
@@ -10,7 +14,9 @@ const Card = ({ item }) => {
 
   return (
     <Box className="item-box">
-      <Box onClick={()=>navigate("/productDetails")} className="image-box">
+      <Box onClick={()=>{
+        myFunction(item)
+        navigate("/productDetails")}} className="image-box">
         <Image w="100%" h="15rem" src={image_link}></Image>
       </Box>
 
