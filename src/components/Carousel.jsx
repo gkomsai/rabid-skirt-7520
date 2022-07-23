@@ -1,11 +1,9 @@
-
-
-import React from 'react';
-import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react';
+import React from "react";
+import { Box, IconButton, useBreakpointValue } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
-import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
+import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 // And react-slick as our Carousel Lib
-import Slider from 'react-slick';
+import Slider from "react-slick";
 
 // Settings for the slider
 const settings = {
@@ -27,25 +25,24 @@ export default function Carousel() {
 
   // These are the breakpoints which changes the position of the
   // buttons as the screen size changes
-  const top = useBreakpointValue({ base: '90%', md: '35%' });
-  const side = useBreakpointValue({ base: '30%', md: '30px' });
+  const top = useBreakpointValue({ base: "90%", md: "35%" });
+  const side = useBreakpointValue({ base: "30%", md: "30px" });
 
   // These are the images used in the slide
   const cards = [
-    'https://files.myglamm.com/site-images/original/SK-Survey-1920x527_1.jpg',
-   
-    'https://files.myglamm.com/site-images/original/Homepage-desktop-lipstikcks.jpg',
-    'https://files.myglamm.com/site-images/original/1920-x-527-c_1.gif',
-   
+    "https://files.myglamm.com/site-images/original/SK-Survey-1920x527_1.jpg",
 
+    "https://files.myglamm.com/site-images/original/Homepage-desktop-lipstikcks.jpg",
+    "https://files.myglamm.com/site-images/original/1920-x-527-c_1.gif",
   ];
 
   return (
     <Box
-      position={'relative'}
-      height={'600px'}
-      width={'full'}
-      overflow={'hidden'}>
+      position={"relative"}
+      height={"38rem"}
+      width={"full"}
+      overflow={"hidden"}
+    >
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"
@@ -66,9 +63,10 @@ export default function Carousel() {
         position="absolute"
         left={side}
         top={top}
-        transform={'translate(0%, -50%)'}
+        transform={"translate(0%, -50%)"}
         zIndex={2}
-        onClick={() => slider?.slickPrev()}>
+        onClick={() => slider?.slickPrev()}
+      >
         <BiLeftArrowAlt />
       </IconButton>
       {/* Right Icon */}
@@ -79,9 +77,10 @@ export default function Carousel() {
         position="absolute"
         right={side}
         top={top}
-        transform={'translate(0%, -50%)'}
+        transform={"translate(0%, -50%)"}
         zIndex={2}
-        onClick={() => slider?.slickNext()}>
+        onClick={() => slider?.slickNext()}
+      >
         <BiRightArrowAlt />
       </IconButton>
 
@@ -90,7 +89,7 @@ export default function Carousel() {
         {cards.map((url, index) => (
           <Box
             key={index}
-            height={'sm'}
+            height={"sm"}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
