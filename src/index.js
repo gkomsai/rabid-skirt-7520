@@ -5,6 +5,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
+import axios from 'axios';
+axios.defaults.baseURL="https://makeup-api.herokuapp.com/api/v1/products.json"; //Note- baseURL is caseSensitive.
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
