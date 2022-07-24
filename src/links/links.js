@@ -9,27 +9,27 @@ export const links = [
   },
   {
     to: "/haircare",
-    title: "HAIRCARE",
+    title: "BONZER",
   },
   {
     to: "/skincare",
-    title: "SKINCARE",
+    title: "EYEBROW",
   },
   {
     to: "/sanetising-care",
-    title: "SANITIZING CARE",
+    title: "EYELINER",
   },
   {
     to: "/collectios",
-    title: "COLLECTION",
+    title: "EYESHADOW",
   },
   {
     to: "/rewards",
-    title: "REWARDS",
+    title: "FOUNDATION",
   },
   {
     to: "/myglamm-studio",
-    title: "MyGlammStudio",
+    title: "LIPLiner",
   },
   {
     to: "/offers",

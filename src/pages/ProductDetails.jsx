@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 
 const clickedData = JSON.parse(localStorage.getItem("singleProduct"));
 console.log(clickedData);
-const { id, price, brand, name, image_link, product_colors, description } =
+const { price, brand, name, image_link, product_colors, description } =
   clickedData;
 
 let cartArr = JSON.parse(localStorage.getItem("cart")) || [];
