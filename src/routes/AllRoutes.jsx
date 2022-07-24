@@ -6,6 +6,7 @@ import Home from '../pages/Home';
 import MakeUp from '../pages/MakeUp';
 import MyGlammStudio from '../pages/MyGlammStudio';
 import Offers from '../pages/Offers';
+import ProductDetails from '../pages/ProductDetails';
 import Rewards from '../pages/Rewards';
 import SanetisingCare from '../pages/SanetisingCare';
 import SkinCare from '../pages/SkinCare';
@@ -25,6 +26,7 @@ const AllRoutes = () => {
         <Route path="/rewards" element={<Rewards />} />
         <Route path="/myglamm-studio" element={<MyGlammStudio />} />
         <Route path="/offers" element={<Offers />} />
+        <Route path="/productDetails" element={<ProductDetails />} />
       </Routes>
     </div>
   )

@@ -6,7 +6,12 @@ import { multiData } from "./data";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 import { useState } from "react";
 import { useEffect } from "react";
-let slidesToShow = 5;
+import Card from "./Card";
+import { Box } from "@chakra-ui/react";
+
+
+
+let slidesToShow = 4;
 const PreviousBtn = (props) => {
   // console.log(props);
   const { className, onClick, currentSlide } = props;
@@ -20,6 +25,7 @@ const PreviousBtn = (props) => {
     </>
   );
 };
+
 const NextBtn = (props) => {
   const { className, onClick, slideCount, currentSlide } = props;
   // console.log(props);
@@ -40,7 +46,7 @@ const carouselProperties = {
   slidesToShow: slidesToShow,
   slidesToScroll: 2,
   infinite: false,
-  // slidesToScroll={3}
+
   responsive: [
     {
       breakpoint: 426,
@@ -85,43 +91,17 @@ const MultiItemCarousel = () => {
   } else if (width > 769 && width <= 1025) {
     slidesToShow = 4;
   } else {
-    slidesToShow = 5;
+    slidesToShow = 4;
   }
 
   return (
-    <div style={{ margin: "30px" }} className="carousel">
-      <h1>Basic carousel</h1>
+    <Box className="carousel">
       <Slider {...carouselProperties}>
         {multiData.map((item) => (
           <Card key={Date.now()} item={item} />
         ))}
       </Slider>
-    </div>
-  );
-};
-
-const Card = ({ item }) => {
-  return (
-    <div style={{ textAlign: "center" }}>
-      <img
-        className="multi__image"
-        src={item}
-        alt=""
-        style={{
-          width: "100%",
-          height: "170px",
-          objectFit: "contain",
-          marginBottom: "10px",
-        }}
-      />
-      <p style={{ fontSize: "14px", padding: "5px 0" }}>TOP TRNDING TVs</p>
-      <p style={{ fontSize: "16px", padding: "5px 0", color: "green" }}>
-        From ₹ 7,000
-      </p>
-      <p style={{ fontSize: "14px", padding: "5px 0", color: "gray" }}>
-        Up To ₹ 5,000 Off on HDFC
-      </p>
-    </div>
+    </Box>
   );
 };
 

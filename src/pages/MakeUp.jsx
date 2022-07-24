@@ -1,4 +1,4 @@
-import { Box, Center, Container, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Box,  Heading, SimpleGrid } from "@chakra-ui/react";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card";
@@ -17,13 +17,16 @@ const MakeUp = () => {
 
   return (
     <Box w="90vw" margin={"auto"}>
-      <Heading textAlign={"center"} m="4rem">
+      <Heading
+        textAlign={"center"}
+        m="4rem"
+        textShadow="1px 1px 2px green, 0 0 25px pink, 0 0 25px orange"
+      >
         MAKEUP
       </Heading>
       <SimpleGrid
         justifyContent={"flex-start"}
         alignItems={"center"}
-        border="1px solid red"
         columns={4}
         gap="3rem"
       >
