@@ -31,18 +31,14 @@ export default function Carousel() {
   // These are the images used in the slide
   const cards = [
     "https://files.myglamm.com/site-images/original/SK-Survey-1920x527_1.jpg",
-
+    "https://files.myglamm.com/site-images/original/Mascara-Banner.jpg",
+    "https://files.myglamm.com/site-images/original/1920x527-C.jpg",
     "https://files.myglamm.com/site-images/original/Homepage-desktop-lipstikcks.jpg",
     "https://files.myglamm.com/site-images/original/1920-x-527-c_1.gif",
   ];
 
   return (
-    <Box
-      position={"relative"}
-      height={"auto"}
-      width={"full"}
-     
-    >
+    <Box position={"relative"} height={"auto"} width={"full"}>
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"

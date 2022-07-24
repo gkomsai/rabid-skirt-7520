@@ -7,21 +7,36 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const clickedData = JSON.parse(localStorage.getItem("singleProduct"));
-console.log(clickedData);
-const { price, brand, name, image_link, product_colors, description } =
-  clickedData;
+
+
 
 let cartArr = JSON.parse(localStorage.getItem("cart")) || [];
 
 const ProductDetails = () => {
+  const clickedData = JSON.parse(localStorage.getItem("singleProduct"));
+  // console.log(clickedData);
+  const [product, setProduct]= useState(clickedData);
   const navigate = useNavigate();
 
+
+
+useEffect(() => {
+
+  setProduct(clickedData);
+
+}, [])
+
+  
+  const { price, brand, name, image_link, product_colors, description } =
+  product;
+ 
+
   return (
-    <>
+    <Box mt="11rem">
+
       <Flex m="4rem 2rem" justifyContent={"space-evenly"} alignItems="center">
         <Box
           cursor={"pointer"}
@@ -88,7 +103,7 @@ const ProductDetails = () => {
           </Box>
         </VStack>
       </Flex>
-    </>
+    </Box>
   );
 };
 
