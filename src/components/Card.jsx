@@ -1,11 +1,11 @@
-import { Box, Flex, Heading, Image, position, Text } from "@chakra-ui/react";
+import { Box, Flex,  Image,  Text } from "@chakra-ui/react";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-let arr=[];
+
 function myFunction(item){
-    arr.push(item);
-    localStorage.setItem("singleProduct", JSON.stringify(arr));
-    
+  
+    localStorage.setItem("singleProduct", JSON.stringify(item));
+
 }
 
 const Card = ({ item }) => {

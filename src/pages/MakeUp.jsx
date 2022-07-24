@@ -1,4 +1,4 @@
-import { Box, Center, Container, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Box,  Heading, SimpleGrid } from "@chakra-ui/react";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card";
