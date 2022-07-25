@@ -16,7 +16,7 @@ const SkinCare = () => {
   }, []);
 
   return (
-    <Box w="90vw" margin={"auto"}>
+    <Box w="90vw" margin={"auto"} mt="14rem">
       <Heading
         textAlign={"center"}
         m="4rem"

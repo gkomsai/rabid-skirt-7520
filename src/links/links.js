@@ -29,7 +29,7 @@ export const links = [
   },
   {
     to: "/myglamm-studio",
-    title: "LIPLiner",
+    title: "LIPLINER",
   },
   {
     to: "/offers",

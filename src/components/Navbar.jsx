@@ -30,7 +30,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <Box className="nav" >
+    <Box className="nav">
       <Flex
         padding={"1rem"}
         pr={"3rem"}
@@ -109,7 +109,13 @@ const Navbar = () => {
 
         <HStack spacing={"2rem"}>
           <Icon as={BsBag} w={"2.4rem"} h={"2.4rem"} cursor="pointer" />
-          <Icon as={FaRegUser} w={"2.4rem"} h={"2.4rem"} cursor="pointer" />
+          <Icon
+            onClick={() => navigate("/signup")}
+            as={FaRegUser}
+            w={"2.4rem"}
+            h={"2.4rem"}
+            cursor="pointer"
+          />
         </HStack>
       </Flex>
 
@@ -117,7 +123,11 @@ const Navbar = () => {
 
       <HStack pr={"3rem"} pl={"3rem"} spacing={"4rem"}>
         {links.map((el) => (
-          <Box _hover={{borderBottom: "3px solid #FF9D9D"}} fontSize={"1rem"} key={el.title}>
+          <Box
+            _hover={{ borderBottom: "3px solid #FF9D9D" }}
+            fontSize={"1rem"}
+            key={el.title}
+          >
             <NavLink
               to={el.to}
               style={({ isActive }) => (isActive ? activeStyle : baseStyle)}

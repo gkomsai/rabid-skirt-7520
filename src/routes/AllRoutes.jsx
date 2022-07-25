@@ -3,12 +3,14 @@ import { Routes, Route } from "react-router-dom";
 import Collections from '../pages/Collections';
 import HairCare from '../pages/HairCare';
 import Home from '../pages/Home';
+import Login from '../pages/Login';
 import MakeUp from '../pages/MakeUp';
 import MyGlammStudio from '../pages/MyGlammStudio';
 import Offers from '../pages/Offers';
 import ProductDetails from '../pages/ProductDetails';
 import Rewards from '../pages/Rewards';
 import SanetisingCare from '../pages/SanetisingCare';
+import SignUp from '../pages/SignUp';
 import SkinCare from '../pages/SkinCare';
 
 
@@ -27,6 +29,8 @@ const AllRoutes = () => {
         <Route path="/myglamm-studio" element={<MyGlammStudio />} />
         <Route path="/offers" element={<Offers />} />
         <Route path="/productDetails" element={<ProductDetails />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </div>
   )
