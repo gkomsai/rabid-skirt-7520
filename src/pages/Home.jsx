@@ -11,7 +11,7 @@ import MultiItemCarousel from "../components/MultiItemCrousel";
 const Home = () => {
   return (
     <Box>
-      <Box mt="12rem">
+      <Box >
         <Carousel />
       </Box>
       <Box w={"80vw"} m="auto" mt="3rem">
