@@ -16,7 +16,7 @@ const MakeUp = () => {
   }, []);
 
   return (
-    <Box w="90vw" margin={"auto"} mt="14rem" >
+    <Box w="90vw" margin={"auto"}  >
       <Heading
         textAlign={"center"}
         m="4rem"

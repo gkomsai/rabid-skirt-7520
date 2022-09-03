@@ -1,11 +1,10 @@
- .nav {
-  position: fixed;
+.nav {
+  position: sticky;
   top: 0px;
-  left: 0px;
   background-color: white;
   width: 100%;
-  z-index: 2;
-  /* margin-bottom: 44rem; */
+  z-index: 10;
+  margin-bottom: 0.4rem;
 }
 
 .content {
@@ -42,7 +41,7 @@
   background-color: rgb(21, 126, 21);
   color: whitesmoke;
   /* font-weight: bold; */
-  padding: 0.4rem .6rem;
+  padding: 0.4rem 0.6rem;
   border-radius: 10px;
   font-size: small;
 }

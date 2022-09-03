@@ -22,7 +22,7 @@ let activeStyle = {
 };
 
 let baseStyle = {
-  textDecoration: "none",
+  
   color: "black",
 };
 
@@ -124,7 +124,7 @@ const Navbar = () => {
       <HStack pr={"3rem"} pl={"3rem"} spacing={"4rem"}>
         {links.map((el) => (
           <Box
-            _hover={{ borderBottom: "3px solid #FF9D9D" }}
+            _hover={{ textDecoration: " underline solid red 5px", textUnderlineOffset: "3px"  }}
             fontSize={"1rem"}
             key={el.title}
           >
